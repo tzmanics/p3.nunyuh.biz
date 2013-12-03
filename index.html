@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<title>HTML DOC.er</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<script type="text/javascript" src="js/jscolor.js"></script>
+</head>
+<body>
+<header>
+	<h1>HTML DOC.er</h1>
+	<h3>Create an HTML doc while learning what it takes.</h3>
+</header>
+<div class='formInput'>
+<div class='expanded'>
+	<h2>PAGE INFORMATION</h2>
+	<form id='pageInput'>
+		Page Title: 
+		<input type='text' name='titleInput'><br><br>
+		Keywords:
+		<textarea name='keywordsInput'>
+			Type all the words you can think of that users may search to find your page.
+			Seperate each work or phrase with a comma. The more the better :)
+		</textarea>
+	</form>
+</div>
+<div class='contracted'>
+	<h2>NAVIGATION</h2>
+	<form id='navInput'>
+		Other Pages: <br>
+		<input type='text' name='page1Input'><br>
+		<input type='text' name='page2Input'><br>
+		<input type='text' name='page3Input'><br>
+		<input type='text' name='page4Input'><br>
+		<input type='text' name='page5Input'><br>
+		Navigation Layout
+		<input type='radio' name='vertBullet' id='vertBullet'/>
+			<label for='vertBullet'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg'/></label>
+		<input type='radio' name='vertBullet' id='vertBullet'/>
+			<label for='vertBullet'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg'/></label>
+		<input type='radio' name='vertBullet' id='vertBullet'/>
+			<label for='vertBullet'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg'/></label>
+		<input type='radio' name='vertBullet' id='vertBullet'/>
+			<label for='vertBullet'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg'/></label>
+	</form>
+</div>
+<div class='contracted'>
+	<h2>CONTENT</h2>
+	<form id='contentInput'>
+		Article 1 Title: 	
+		<input type='text' name='article1TitleInput'><br>
+		Keywords:
+		<textarea name='article1TitleInput'>
+		</textarea><br><br>
+		Article 2 Title: 	
+		<input type='text' name='article2TitleInput'><br>
+		Keywords:
+		<textarea name='article2TitleInput'>
+		</textarea>
+	</form>
+</div>
+<div class='contracted'>
+	<h2>FOOTER</h2>
+	<form id='footerInput'>
+		Creator Name: 	
+		<input type='text' name='article1TitleInput'><br>
+		E-Mail Adress: 	
+		<input type='text' name='article1TitleInput'><br>
+		Copyright Date: 	
+		<input type='text' name='article1TitleInput'><br>
+	</form>
+</div>
+<!--<div class='contracted'>
+	<h2>STYLE</h2>
+	<form id='styleInput'>
+		Have a Stylesheet?: 	
+		<input type='text' name='stylesheetInput'><br>
+		Background Color:<input class="color {hash:true}" name='backgrounColorInput'><br>
+		Copyright Date: 	
+		<input type='text' name='article1TitleInput'><br>
+	</form>
+</div>-->
+</div>
+<div class='formOutput'>
+	<div id='headOutput'>
+		<p>&lt;!DOCTYPE HTML&gt;</p>
+		<p>&lt;head&gt;</p>
+		<p>&lt;title&gt;</p>
+		<p>&lt;/title&gt;</p>
+		<p>&lt;/head&gt;</p>
+		<p>&lt;body&gt;</p>
+		<p>&lt;/body&gt;</p>
+		<p>&lt;/html&gt;</p>
+	<div id='pageInfoResults'>
+
+	<button type='button' name='saveFile'>Save HTML File</button>
+	</div>
+</div>
+</body>
+</html>
