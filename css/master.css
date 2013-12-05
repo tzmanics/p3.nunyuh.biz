@@ -34,6 +34,8 @@ input, textarea{
 }
 
 
+
+
 #formOutput{
 	background-color: black;
 	color: white;
@@ -46,14 +48,14 @@ input, textarea{
 }
 
 #formOutput p{
-	font-size: 1.25em;
+	font-size: 1em;
 	line-height: 35px;
 
 }
 
-#pageTitleOutput, #keywordsOutput{
+#formOutput div{
 	padding-left: 50px;
-	color: #F55722;
+	color: #F5B458;
 }
 
 #keywordsOutput{
@@ -71,7 +73,7 @@ ul#accordion ul li {
 }  
 ul#accordion ul li:last-child { border-bottom: none; }  
 ul#accordion a.heading {    
-    color: #36C965;  
+    color: #1ED4A9;  
     display: block;  
     font-size: 2em;  
     text-align: right;
@@ -79,7 +81,7 @@ ul#accordion a.heading {
     padding: 10px 10px;  
     text-decoration: none;  
 }  
-ul#accordion a.heading:hover { background: #36C965; color: white; }  
+ul#accordion a.heading:hover { background: #1ED4A9; color: white; }  
 ul#accordion li ul a {color: #025185; text-decoration: none; }  
 ul#accordion li ul a:hover { border-bottom: none; }  
 ul#accordion li ul .date { padding-right: 10px; }  

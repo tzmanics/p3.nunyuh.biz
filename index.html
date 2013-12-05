@@ -38,20 +38,17 @@
 					<li>
 						<form>
 							Other Pages: <br>
-							<input type='text' name='page1Input'><br>
-							<input type='text' name='page2Input'><br>
-							<input type='text' name='page3Input'><br>
-							<input type='text' name='page4Input'><br>
-							<input type='text' name='page5Input'><br>
+							<input type='text' id='page1Input'><br>
+							<input type='text' id='page2Input'><br>
+							<input type='text' id='page3Input'><br>
+
 							Navigation Layout
-							<input type='radio' name='vertBullet' id='vertBullet'/>
+							<input type='radio' id='vertBullet' id='vertBullet' checked/>
 							<label for='vertBullet'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg' alt='Vertical Bullet Navigation'/></label>
-							<input type='radio' name='horizButton' id='horizButton'/>
+							<input type='radio' id='horizButton' id='horizButton'/>
 							<label for='horizButton'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg' alt='Horizontal Button Navigation'/></label>
-							<input type='radio' name='horizText' id='horizText'/>
+							<input type='radio' id='horizText' id='horizText'/>
 							<label for='horizText'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg' alt='Horizontal Text Navgation'/></label>
-							<input type='radio' name='vertButton' id='vertButton'/>
-							<label for='vertButton'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg' alt='Vertical Button Navigation'/></label>
 						</form>
 					</li>
 				</ul>
@@ -62,14 +59,15 @@
 					<li>
 						<form>
 							Article 1 Title: 	
-							<input type='text' name='article1TitleInput'><br>
-							Keywords:
-							<textarea name='article1TitleInput'>
+							<input type='text' id='article1TitleInput'><br>
+							Article 1 Content:
+							<textarea id='article1ContentInput'>
 							</textarea><br><br>
+
 							Article 2 Title: 	
-							<input type='text' name='article2TitleInput'><br>
-							Keywords:
-							<textarea name='article2TitleInput'>
+							<input type='text' id='article2ContentInput'><br>
+							Article 2 Content:
+							<textarea id='article2ContentInput'>
 							</textarea>
 						</form>
 					</li>
@@ -80,16 +78,12 @@
 				<ul>
 					<li>
 						<form>
-							Article 1 Title: 	
-							<input type='text' name='article1TitleInput'><br>
-							Keywords:
-							<textarea name='article1TitleInput'>
-							</textarea><br><br>
-							Article 2 Title: 	
-							<input type='text' name='article2TitleInput'><br>
-							Keywords:
-							<textarea name='article2TitleInput'>
-							</textarea>
+						Page Creator: 
+						<input type='text' id='creatorInput'>
+						<h4>The PAGE CREATOR is the person or company name you want to show at the bottom of the page.</h4><br><br>
+						Contact Email:
+						<input type='text' id='emailInput'>
+						<h4>This will be the email address a user can click to email you.</h4><br><br>
 						</form>
 					</li>
 				</ul>
@@ -105,12 +99,21 @@
 		<p>&lt;meta name="keywords" content="</p>
 		<div id='keywordsOutput'></div><p>"&gt;</p>
 		<p>&lt;meta charset="UTF-8"&gt;</p>
+		<div id='styleOutput'></div>
 		<p>&lt;/head&gt;</p>
 		<p>&lt;body&gt;</p>
+		<p>&lt;nav&gt;</p>
+		<p>&lt;ul&gt;</p>
+		<div id='page1Output'></div>
+		<div id='page2Output'></div>
+		<div id='page3Output'></div>
+		<p>&lt;/ul&gt;</p>
+		<p>&lt;/nav&gt;</p>
+		<div id='article1Output'></div>
 		<p>&lt;/body&gt;</p>
 		<p>&lt;/html&gt;</p>
 
-		<button type='button' name='saveFile'>Save HTML File</button>
+		<button type='button' id='saveFile'>Save HTML File</button>
 	</div>
 	</body>
 </html>
