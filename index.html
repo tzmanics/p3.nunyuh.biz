@@ -19,16 +19,15 @@
 				<a href="#pageInput" class="heading">PAGE INFO</a>
 				<ul>
 					<li>
-						<h4>The PAGE TITLE shows up in the tab of the web browser.</h4>
-						<h4>KEYWORDS go in the meta tag and help people find your page within search engines.</h4>
-					</li>
-					<li>
 						<form>
 						Page Title: 
-						<input type='text' name='titleInput'><br><br>
+						<input type='text' id='titleInput'>
+						<h4>The PAGE TITLE shows up in the tab of the web browser. Consider this when deciding the length of the title.</h4><br><br>
 						Keywords:
-						<textarea name='keywordsInput'>
+						<textarea id='keywordsInput'>
 						</textarea>
+						<h4>KEYWORDS go in the meta tag and help people find your page within search engines.</h4>
+						<p>*separate each keyword with a comment</p>
 						</form>
 					</li>
 				</ul>
@@ -101,7 +100,11 @@
 		<p>&lt;!DOCTYPE HTML&gt;</p>
 		<p>&lt;head&gt;</p>
 		<p>&lt;title&gt;</p>
+		<div id='pageTitleOutput'></div>
 		<p>&lt;/title&gt;</p>
+		<p>&lt;meta name="keywords" content="</p>
+		<div id='keywordsOutput'></div><p>"&gt;</p>
+		<p>&lt;meta charset="UTF-8"&gt;</p>
 		<p>&lt;/head&gt;</p>
 		<p>&lt;body&gt;</p>
 		<p>&lt;/body&gt;</p>

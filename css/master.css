@@ -22,15 +22,17 @@ h3{
 	font-size: 1.25em;
 	margin-bottom: 10px 0 0 20px;
 }
-h4{
-	text-align: right;
-	margin-bottom: 20px;
-}
 p{
-	font-size: 1.2em;
+	font-size: .7em;
 	font-weight: 300;
-	line-height: 35px;
+	padding-top:0;
+	line-height: 15px;
 }
+
+input, textarea{
+	font-size: 1em;
+}
+
 
 #formOutput{
 	background-color: black;
@@ -40,7 +42,24 @@ p{
 	height: 75%;
 	margin: 0 22px;
 	padding: 22px;
+	word-wrap: break-word;
 }
+
+#formOutput p{
+	font-size: 1.25em;
+	line-height: 35px;
+
+}
+
+#pageTitleOutput, #keywordsOutput{
+	padding-left: 50px;
+	color: #F55722;
+}
+
+#keywordsOutput{
+	float: left;
+}
+
 /** accordion **/
 ul#accordion{
 	width: 45%;
