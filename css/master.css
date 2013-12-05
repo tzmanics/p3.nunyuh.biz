@@ -1,24 +1,75 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
+/*****Reset*****/  
+html, body, div, h1, h3, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }  
 
 body{
 	width: 100%;
+	font-family:'Muli', sans-serif;
+	font-size: 15pt;
+	padding: 20px;
+}
+
+h1{
+	font-size: 5em;
+	font-weight: 700;
+	line-height: 65px;
 }
 h2{
+	font-size: 3.5em;
 	text-align: right;
 }
 
-div{
-	padding: 20px;
-	float:left;
-	width:45%;
+h3{
+	font-size: 1.25em;
+	margin-bottom: 10px 0 0 20px;
+}
+h4{
+	text-align: right;
+	margin-bottom: 20px;
+}
+p{
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 35px;
 }
 
-.contracted{
-	width: 100%;
+#formOutput{
+	background-color: black;
+	color: white;
+	float: left;
+	width: 45%;
+	height: 75%;
+	margin: 0 22px;
+	padding: 22px;
 }
+/** accordion **/
+ul#accordion{
+	width: 45%;
+}
+ul#accordion, ul#accordion ul { list-style: none; margin-right: 50px;}  
+ul#accordion ul li {   
+    border: none;   
+    padding: 5px 10px;  
+}  
+ul#accordion ul li:last-child { border-bottom: none; }  
+ul#accordion a.heading {    
+    color: #36C965;  
+    display: block;  
+    font-size: 2em;  
+    text-align: right;
+    line-height: 40px;  
+    padding: 10px 10px;  
+    text-decoration: none;  
+}  
+ul#accordion a.heading:hover { background: #36C965; color: white; }  
+ul#accordion li ul a {color: #025185; text-decoration: none; }  
+ul#accordion li ul a:hover { border-bottom: none; }  
+ul#accordion li ul .date { padding-right: 10px; }  
+ul#accordion li ul .count { padding-left: 10px; }  
 
-.expanded{
-	width: 100%;
-}
+
+/**** for IE whitespace bug ****/
+ul#accordion { float: left; width: 45%; margin-right: 20px;}  
+ul#accordion li { float: left; width: 100%; }  
+ul#accordion a.heading { width: 100%; }  
+ul#accordion ul li { float: none; width: auto; }  
+
