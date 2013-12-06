@@ -22,11 +22,11 @@
 						<form>
 						Page Title: 
 						<input type='text' id='titleInput'>
-						<h4>The PAGE TITLE shows up in the tab of the web browser. Consider this when deciding the length of the title.</h4><br><br>
+						<h4>The PAGE TITLE shows up in the tab of the web browser. Consider this when deciding the length of the title. This will also show up as a header on your page.</h4><br><br>
 						Keywords:
 						<textarea id='keywordsInput'>
 						</textarea>
-						<h4>KEYWORDS go in the meta tag and help people find your page within search engines.</h4>
+						<h4>KEYWORDS go in the meta tag and help people find your page within search engines.*</h4>
 						<p>*separate each keyword with a comment</p>
 						</form>
 					</li>
@@ -41,15 +41,8 @@
 							<input type='text' id='page1Input'><br>
 							<input type='text' id='page2Input'><br>
 							<input type='text' id='page3Input'><br>
-
-							Navigation Layout
-							<input type='radio' id='vertBullet' id='vertBullet' checked/>
-							<label for='vertBullet'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg' alt='Vertical Bullet Navigation'/></label>
-							<input type='radio' id='horizButton' id='horizButton'/>
-							<label for='horizButton'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg' alt='Horizontal Button Navigation'/></label>
-							<input type='radio' id='horizText' id='horizText'/>
-							<label for='horizText'><img src='http://kb.its.psu.edu/sites/default/files/angel/tal1075image002.jpg' alt='Horizontal Text Navgation'/></label>
-						</form>
+						</form><br>
+						<h4>These PAGES will show up as buttons that users can click to take them to that page. Make the other HTML pages and save them with the name you put in these text fields (i.e. yourPageName.html. Make sure these files are in the same directory as this file so the browser can find them :)</h4><br><br>
 					</li>
 				</ul>
 			</li>
@@ -65,11 +58,12 @@
 							</textarea><br><br>
 
 							Article 2 Title: 	
-							<input type='text' id='article2ContentInput'><br>
+							<input type='text' id='article2TitleInput'><br>
 							Article 2 Content:
 							<textarea id='article2ContentInput'>
 							</textarea>
-						</form>
+						</form><br>
+						<h4>The ARTICLE TITLEs will show up as a bold header for the ARTICLE CONTENT that make up the, bulk content of your site.</h4><br><br>
 					</li>
 				</ul>
 			</li>
@@ -85,6 +79,8 @@
 						<input type='text' id='emailInput'>
 						<h4>This will be the email address a user can click to email you.</h4><br><br>
 						</form>
+						<br><br>
+						When you're done filling in all of the text fields in the sections above, copy all of the text in the black box to the right. Next open a text editor and paste. This file should be saved as an .html file. Now you can double-click the file and view it in a web browser. Congrats!
 					</li>
 				</ul>
 			</li>	
@@ -102,6 +98,7 @@
 		<div id='styleOutput'></div>
 		<p>&lt;/head&gt;</p>
 		<p>&lt;body&gt;</p>
+		<div id="pageTitleHeadingOutput"></div>
 		<p>&lt;nav&gt;</p>
 		<p>&lt;ul&gt;</p>
 		<div id='page1Output'></div>
@@ -109,11 +106,17 @@
 		<div id='page3Output'></div>
 		<p>&lt;/ul&gt;</p>
 		<p>&lt;/nav&gt;</p>
-		<div id='article1Output'></div>
+		<div id='article1TitleOutput'></div>
+		<div id='article1ContentOutput'></div>
+		<div id='article2TitleOutput'></div>
+		<div id='article2ContentOutput'></div>
+		<p>&lt;footer&gt;</p>
+		<div id='creatorOutput'></div>
+		<div id='emailOutput'></div>
+		<p>&lt;/footer&gt;</p>
 		<p>&lt;/body&gt;</p>
 		<p>&lt;/html&gt;</p>
 
-		<button type='button' id='saveFile'>Save HTML File</button>
 	</div>
 	</body>
 </html>
