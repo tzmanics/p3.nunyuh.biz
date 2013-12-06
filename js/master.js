@@ -5,11 +5,12 @@ window.onload = function()
 	        collapsible: true,
 	        heightStyle: "content"
 	    });
-			});
+	});
 
 	$('#titleInput').keyup(function(){
 
 		var titleInput = $(this).val();
+
 		$('#pageTitleOutput').html(titleInput);
 	});
 
@@ -34,7 +35,7 @@ window.onload = function()
 	$('#page2Input').blur(function(){
 
 		var page2Input = $(this).val();
-		$('#page2Output').empty().append('<p>&lt;li&gt; &lt;a href="',[page2Input], '.html"&gt;', [page2Input], '&lt;/a&gt;</p>&lt;/li&gt;</p>');
+		$('#page2Output').empty().append('<p>&lt;li&gt; &lt;a href="',[page2Input], '.html"&gt;',[page2Input], '&lt;/a&gt;</p>&lt;/li&gt;</p>');
 	});
 
 	$('#page3Input').blur(function(){
@@ -71,7 +72,7 @@ window.onload = function()
 	$('#creatorInput').blur(function(){
 
 		var creatorInput = $(this).val();
-		$('#creatorOutput').empty().append('Made by: ',[creatorInput], '    |   ');
+		$('#creatorOutput').empty().append('Made by: ',[creatorInput], ' | ');
 	});
 
 	$('#emailInput').blur(function(){
