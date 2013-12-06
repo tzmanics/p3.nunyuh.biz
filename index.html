@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>HTML DOC.er</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/master.css">
 	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -13,12 +13,16 @@
 		<h1>HTML DOC.er</h1>
 		<h3>Create an HTML doc while learning what it takes.</h3>
 	</header>
+
+	<!-- User Input -->
 	<div id='formInput>'>
 		<ul id="accordion">
 			<li>
 				<a href="#pageInput" class="heading">PAGE INFO</a>
 				<ul>
 					<li>
+
+						<!-- Form input for Page Information -->	
 						<form>
 						Page Title: 
 						<input type='text' id='titleInput'>
@@ -36,6 +40,7 @@
 			<a href="#navInput" class="heading">NAVIGATION</a>
 				<ul>
 					<li>
+					<!-- Form input for Page navigation -->
 						<form>
 							Other Pages: <br>
 							<input type='text' id='page1Input'><br>
@@ -50,6 +55,8 @@
 			<a href="#contentInput" class="heading">CONTENT</a>
 				<ul>
 					<li>
+
+						<!-- Form input for page content/articles -->
 						<form>
 							Article 1 Title: 	
 							<input type='text' id='article1TitleInput'><br>
@@ -71,6 +78,8 @@
 				<a href="#footerInput" class="heading">FOOTER</a>
 				<ul>
 					<li>
+
+						<!-- Form input for page footer -->
 						<form>
 						Page Creator: 
 						<input type='text' id='creatorInput'>
@@ -86,6 +95,8 @@
 			</li>	
 		</ul>
 	</div>
+
+	<!-- Output to create HTML doc text -->
 	<div id='formOutput'>
 		<p>&lt;!DOCTYPE HTML&gt;</p>
 		<p>&lt;head&gt;</p>

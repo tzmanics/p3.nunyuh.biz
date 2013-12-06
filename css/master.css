@@ -1,4 +1,4 @@
-/*****Reset*****/  
+/* reset */  
 html, body, div, h1, h3, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }  
 
 body{
@@ -20,7 +20,7 @@ h2{
 
 h3{
 	font-size: 1.25em;
-	margin-bottom: 10px 0 0 20px;
+	margin: 5px 0 0 7px;
 }
 p{
 	font-size: .7em;
@@ -34,7 +34,7 @@ input, textarea{
 }
 
 
-
+/* DIVs */
 
 #formOutput{
 	background-color: black;
@@ -62,17 +62,26 @@ input, textarea{
 	float: left;
 }
 
-/** accordion **/
+
+
+/* accordion */
+
 ul#accordion{
 	width: 45%;
 }
-ul#accordion, ul#accordion ul { list-style: none; margin-right: 50px;}  
+ul#accordion, ul#accordion ul { 
+	list-style: none; 
+	margin-right: 50px;
+}  
+
 ul#accordion ul li {   
     border: none;   
     padding: 5px 10px; 
     margin-top: 30px; 
 }  
-ul#accordion ul li:last-child { border-bottom: none; }  
+
+ul#accordion ul li:last-child { border-bottom: none; } 
+
 ul#accordion a.heading {    
     color: #1ED4A9;  
     display: block;  
@@ -82,14 +91,21 @@ ul#accordion a.heading {
     padding: 10px 10px;  
     text-decoration: none;  
 }  
-ul#accordion a.heading:hover { background: #1ED4A9; color: white; }  
-ul#accordion li ul a {color: #025185; text-decoration: none; }  
+ul#accordion a.heading:hover { 
+	background: #1ED4A9; 
+	color: white; 
+}  
+ul#accordion li ul a {
+	color: #025185; 
+	text-decoration: none; 
+}  
+
 ul#accordion li ul a:hover { border-bottom: none; }  
 ul#accordion li ul .date { padding-right: 10px; }  
 ul#accordion li ul .count { padding-left: 10px; }  
 
 
-/**** for IE whitespace bug ****/
+/* for IE whitespace bug */
 ul#accordion { float: left; width: 45%; margin-right: 20px;}  
 ul#accordion li { float: left; width: 100%; }  
 ul#accordion a.heading { width: 100%; }  
